@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quer namorar cmg?</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end; /* botão à direita */
+      align-items: flex-start;   /* botão no topo */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSeO0rrLrzNMaEYqN7UFrfxvtvkMGdvQOeBc3en-WQI0jc-S-XRstqAc&s=10');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    button {
+      background-color: #ff4444; /* vermelho */
+      color: white;
+      border: none;
+      padding: 8px 16px;   /* menor tamanho */
+      font-size: 14px;     /* menor texto */
+      border-radius: 8px;
+      cursor: pointer;
+      position: absolute;  /* pra colocar exatamente onde a seta aponta */
+      top: 60%;            /* ajuste vertical */
+      right: 5%;           /* ajuste horizontal */
+      transform: translateY(-50%); /* centraliza verticalmente no ponto */
+    }
+
+    #mensagem {
+      display: none;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 182, 193, 0.8); /* rosa clarinho e transparente */
+      padding: 20px 30px;
+      border-radius: 12px;
+      font-size: 18px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="mostrarMensagem()">Quer namorar cmg?</button>
+  <div id="mensagem">Só depende de você querer :]</div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('mensagem').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
